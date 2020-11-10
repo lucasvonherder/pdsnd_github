@@ -1,15 +1,18 @@
 ### Date created
-Include the date you created this project and README file.
+10/11/2020
 
 ### Project Title
-Replace the Project Title
+Udacity - Nanodegree - Programming for Data Science - python bikeshare data exploration
 
 ### Description
-Describe what your project is about and what it does
+Create a small tool for users to get statistical informations on the shared bike usage while taking the specific user requirements into account.
 
 ### Files used
-Include the files used
+bikeshare_2.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104
 
