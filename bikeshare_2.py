@@ -29,7 +29,7 @@ def get_filters():
             x = CITY_DATA[city]
             break
         except KeyError:
-            print("We could not find the City in our Database, pleas choose Chigago, New York City or Washington")
+            print("We could not find the city in our Database, pleas choose Chigago, New York City or Washington")
 
     # get user input for month (all, january, february, ... , june)
     while True:
