@@ -10,6 +10,7 @@ CITY_DATA = { "chicago": "chicago.csv",
               "washington": "washington.csv" }
 
 def get_filters():
+
     """
     Asks user to specify a city, month, and day to analyze.
 
@@ -18,6 +19,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
+
     print("Hello! Let\"s explore some US bikeshare data!")
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
@@ -27,7 +29,7 @@ def get_filters():
             x = CITY_DATA[city]
             break
         except KeyError:
-            print("We could not find the City in our Database, pleas choose Chigago, New York City or Washington")
+            print("We could not find the city in our Database, pleas choose Chigago, New York City or Washington")
 
     # get user input for month (all, january, february, ... , june)
     while True:
@@ -50,8 +52,8 @@ def get_filters():
     print("-"*40)
     return city, month, day
 
-
 def load_data(city, month, day):
+
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -62,6 +64,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
+
     df = pd.read_csv(CITY_DATA[city])
     df["Start Time"] = pd.to_datetime(df["Start Time"])
     df["month"] = df["Start Time"].dt.month
@@ -77,8 +80,8 @@ def load_data(city, month, day):
 
     return df
 
-
 def time_stats(df):
+
     """Displays statistics on the most frequent times of travel."""
 
     print("\nCalculating The Most Frequent Times of Travel...\n")
@@ -198,7 +201,6 @@ def main():
                 counter += 5
             else:
                 break
-
 
         restart = input("\nWould you like to restart? Enter yes or no.\n")
         if restart.lower() != "yes":
