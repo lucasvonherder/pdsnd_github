@@ -172,6 +172,7 @@ def main():
         user_stats(df, city)
 
 
+        # Ask user if a a look into the raw data is wished for
 
         counter = 0
 
